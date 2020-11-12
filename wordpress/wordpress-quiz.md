@@ -16,7 +16,7 @@
 
 - [ ] HackerOne
 - [ ] Redmine
-- [ ] Trac
+- [x] Trac
 - [ ] GitHub Issues
 
 #### Q4. The REST API is a simple way to get data in and out of WordPress over HTTP. Applications using the REST API should be written in which programming language?
@@ -93,7 +93,7 @@
 - [ ] widgets, containers, sections, settings
 - [ ] containers, hooks, settings, styles
 - [ ] panels, blocks, controls, settings
-- [ ] panels, sections, controls, settings
+- [x] panels, sections, controls, settings
 
 #### Q12. Which WordPress setting would you use to make page URLs look like `http://example.com/my-page/` instead of the default `http://example.com/?p=21/?`
 
@@ -127,13 +127,13 @@
 
 - [ ] Template tags prefaced with the\_ don't accept arguments.
 - [ ] Template tags prefaced with the\_ can be used directly within a template.
-- [ ] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
+- [x] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
 - [ ] Template tags prefaced with the\_ return a value. Template tags prefaced with get_the display a value.
 
 #### Q17. WP_Query is the WordPress query class that is used to fetch posts from the database. How would you create a new instance of this class?
 
 - [ ] `$query = new query_posts();`
-- [ ] `$query = new WP_Query();`
+- [x] `$query = new WP_Query();`
 - [ ] `$query = query_posts();`
 - [ ] `$query = get_posts();`
 
@@ -141,10 +141,10 @@
 
 - [ ] MU Admin
 - [ ] Owner
-- [ ] Super Admin
+- [x] Super Admin
 - [ ] Multisite Master
 
-#### Q19. Within the editor, blocks are rendered as JavaScript. How are blocks rendered on the front end of a site?Within the editor, blocks are rendered as JavaScript. How are blocks rendered on the front end of a site?
+#### Q19. Within the editor, blocks are rendered as JavaScript. How are blocks rendered on the front end of a site?
 
 - [ ] as plain HTML
 - [ ] as a React component
@@ -202,13 +202,13 @@ jQuery(function($) {
 
 - [ ] `add_action( 'example_hook', 'example_function', $accepted_args, $priority )`
 - [ ] `add_action( 'example_function', 'example_hook', $priority, $accepted_args )`
-- [ ] `add_action( 'example_hook', 'example_function', $priority, $accepted_args )`
+- [x] `add_action( 'example_hook', 'example_function', $priority, $accepted_args )`
 - [ ] `add_action( 'example_function', 'example_hook', $priority )`
 
 #### Q24. You have a search bar on your site. You would like to use a `<label>` to make the word "Search" visible to screen readers, but you don't want to display the word "Search" on the screen. How can you accomplish this?
 
 - [ ] Assign an ARIA state of "hidden" to the label, like this: `<label state="hidden">Search</label> <input type="text" name="search" id="search" />`
-- [ ] Use the built-in WordPress CSS class .screen-reader-text to hide the text from screen, like this: `<label class="screen-reader-text">Search</label> <input type="text" name="search" id="search" />`
+- [x] Use the built-in WordPress CSS class .screen-reader-text to hide the text from screen, like this: `<label class="screen-reader-text">Search</label> <input type="text" name="search" id="search" />`
 - [ ] Create a custom CSS class to set a large negative value to the text-indent property to hide the text off screen, like this: `<label class="hide-this">Search</label> <input type="text" name="search" id="search" />`
 - [ ] The majority of users do not require a screen reader. Remove the label entirely.
 
@@ -222,7 +222,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 - [ ] This is how WordPress detects a plugin's presence. This ensures that the plugin is running from the /wp-content/plugins/ directory. If it is not, the plugin should not run.
 - [ ] This is a way to prevent naming collisions. ABSPATH is the absolute path to the plugin's directory. If ABSPATH is defined by another WordPress plugin with the same directory slug, the plugin should not run.
-- [ ] This is a security measure. ABSPATH is the absolute path to the WordPress directory. If the file is called directly, ABSPATH will not be defined and therefore the plugin should not run.
+- [x] This is a security measure. ABSPATH is the absolute path to the WordPress directory. If the file is called directly, ABSPATH will not be defined and therefore the plugin should not run.
 - [ ] This is a compatibility checker. ABSPATH is defined in WordPress core. The plugin checks that the minimum version of WordPress needed to support the plugin is installed. If it is not, the plugin should not run.
 
 #### Q26. Which is a best practice for working with WordPress CSS?
@@ -235,14 +235,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 #### Q27. WordPress is translated, at least partially, in more than 200 locales. If you wanted to help translate WordPress into other languages, which contributor group would you join?
 
 - [ ] core
-- [ ] polyglots
+- [x] polyglots
 - [ ] accessibility
 - [ ] documentation
 
 #### Q28. What is the difference between an action and a filter?
 
 - [ ] Actions are used to add custom functions and remove WordPress functions. Filters are used to make strings translatable for localization.
-- [ ] Actions are used to add or remove code at runtime. Filters are used to modify data before it is either displayed in the browser or saved to the database.
+- [x] Actions are used to add or remove code at runtime. Filters are used to modify data before it is either displayed in the browser or saved to the database.
 - [ ] Actions are used to assign values to variables at runtime. Filters are used to extract data from actions and display it in the browser.
 - [ ] Actions are used to add user-inputted data to the database. Filters are used to validate user-inputted data prior to adding it to the database.
 
@@ -269,21 +269,21 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 #### Q32. What technique would you use to secure data before rendering it to a user?
 
-- [ ] escape and sanitize
+- [x] escape and sanitize
 - [ ] validate and escape
 - [ ] validate and sanitize
 - [ ] escape and secure
 
 #### Q33. If your WordPress site is seriously compromised, what is the best course of action to return your site to good health?
 
-- [ ] Determine the date of the attack and restore your site to a backup point prior to that date.
+- [x] Determine the date of the attack and restore your site to a backup point prior to that date.
 - [ ] Hire a third-party service to clean up your site because it is difficult for someone who is not a WordPress security expert to find and remove all traces of an attack.
 - [ ] Manually delete suspicious files on the server and delete any database tables that are not core WordPress.
 - [ ] Change your hosting password, your WordPress admin password, and your database password.
 
 #### Q34. If you wanted to register a custom post type, which hook would you use?
 
-- [ ] register_post_type
+- [x] register_post_type
 - [ ] add_meta_box
 - [ ] wp_head
 - [ ] init
@@ -312,20 +312,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 ### Q38. How would you write a text string containing "Hello World!" in a way that makes it possible for someone else to translate the string into a different language?
 
 - [ ] apply_filters( 'Hello World!', 'mytextdomain' );
-- [ ] \_\_( 'Hello World!', 'mytextdomain' );
+- [x] \_\_( 'Hello World!', 'mytextdomain' );
 - [ ] \$string = "Hello World!";
 - [ ] esc_html( 'Hello World!', 'mytextdomain' );
 
 ### Q39. What is the core mission of WordPress?
 
 - [ ] to make free software
-- [ ] to democratize publishing and the freedoms that come with open source
+- [x] to democratize publishing and the freedoms that come with open source
 - [ ] to make money
 - [ ] to encourage blogging
 
 ### Q40. Which of the following is NOT a suggested security improvement for your WordPress website?
 
-- [ ] The site should communicate with WordPress.org.
+- [x] The site should communicate with WordPress.org.
 - [ ] Remove inactive themes.
 - [ ] Do not output debug information.
 - [ ] WordPress updates are accomplished manually only.
@@ -334,23 +334,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 - [ ] Template tags prefaced with the\_ can be used directly within a template. Template tags prefaced with get_the are generally reserved for partial templates.
 - [ ] Template tags prefaced with the\_ return a value. Template tags prefaced with get_the display a value.
-- [ ] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
+- [x] Template tags prefaced with the\_ display a value. Template tags prefaced with get_the return a value.
 - [ ] Template tags prefaced with the\_ don't accept arguments. Template tags prefaced with get_the do accept arguments.
 
 ### Q42. How can you add a custom script that needs to run only on the contact page of a site? The slug of the page is contact.
 
-Link to the script directly from a template named page-contact.php using the get_header() template tag, like this:
+- [ ] Link to the script directly from a template named page-contact.php using the get_header() template tag, like this:
 get_header( '<script src="/my-script.js"></script>' );
 Use functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 
-function load_scripts() {
+- [ ] function load_scripts() {
 if ( is_page( 'contact' ) ) {
 echo '<script src="/my-script.js"></script>';
 }
 }
 
-Use functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:
+- [x] Use functions.php to conditionally load the script by hooking it to wp_enqueue_scripts(), like this:
 add_action( 'wp_enqueue_scripts', 'load_scripts' );
 function load_scripts() {
 if ( is_page( 'contact' ) ) {
@@ -359,6 +359,6 @@ wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js' );
 }
 
 - [ ] Link to the script directly from a template named page-contact.php, like this:
-- [ ] <head>
-- [ ] <script src="/my-script.js"></script>
-- [ ] </head>
+<head>
+<script src="/my-script.js"></script>
+</head>
